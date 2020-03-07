@@ -38,17 +38,15 @@
 
     <TextView
         android:id="@+id/height-label"
-        android:layout_width="59dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="175dp"
+        android:layout_width="74dp"
+        android:layout_height="24dp"
         android:layout_marginTop="148dp"
-        android:layout_marginEnd="175dp"
         android:layout_marginBottom="305dp"
         android:labelFor="@id/height_input"
         android:text="@string/height"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/height_input"
         app:layout_constraintVertical_bias="1.0" />
@@ -77,10 +75,24 @@
         android:layout_marginTop="28dp"
         android:layout_marginEnd="156dp"
         android:layout_marginBottom="238dp"
+        android:onClick="calculateBMI"
         android:text="@string/calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/height_input" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
