@@ -1,1 +1,1 @@
-# Apps created for PAMO classes
+1. BMI calculator
